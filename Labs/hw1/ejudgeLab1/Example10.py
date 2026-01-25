@@ -1,0 +1,5 @@
+a = input()
+b = a.lower()
+c = a.upper()
+print(c)
+print(b)
