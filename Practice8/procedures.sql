@@ -1,4 +1,3 @@
--- 🔄 1. Upsert (insert или update)
 CREATE OR REPLACE PROCEDURE upsert_contact(p_name VARCHAR, p_phone VARCHAR)
 LANGUAGE plpgsql AS $$
 BEGIN
@@ -14,7 +13,7 @@ END;
 $$;
 
 
--- 📥 2. Массовая вставка с проверкой
+
 CREATE OR REPLACE PROCEDURE bulk_insert()
 LANGUAGE plpgsql AS $$
 DECLARE
@@ -29,7 +28,6 @@ END;
 $$;
 
 
--- ❌ 3. Удаление
 CREATE OR REPLACE PROCEDURE delete_contact(p_value VARCHAR)
 LANGUAGE plpgsql AS $$
 BEGIN

@@ -2,7 +2,7 @@ import csv
 from connect import get_connection
 
 
-# ➤ Добавление через консоль
+
 def insert_from_console():
     username = input("Enter name: ")
     phone = input("Enter phone: ")
@@ -20,7 +20,7 @@ def insert_from_console():
     conn.close()
 
 
-# ➤ Загрузка из CSV
+
 def insert_from_csv(filename):
     conn = get_connection()
     cur = conn.cursor()
@@ -38,7 +38,7 @@ def insert_from_csv(filename):
     conn.close()
 
 
-# ➤ Поиск
+
 def query_data():
     keyword = input("Search name or phone: ")
 
@@ -59,7 +59,7 @@ def query_data():
     conn.close()
 
 
-# ➤ Обновление
+
 def update_contact():
     username = input("Enter username to update: ")
     new_name = input("New name (or press Enter): ")
@@ -85,7 +85,7 @@ def update_contact():
     conn.close()
 
 
-# ➤ Удаление
+
 def delete_contact():
     choice = input("Delete by (1) name or (2) phone: ")
 
@@ -104,7 +104,7 @@ def delete_contact():
     conn.close()
 
 
-# ➤ Меню
+
 def menu():
     while True:
         print("\n1. Insert from console")
