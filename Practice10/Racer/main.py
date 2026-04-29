@@ -29,7 +29,7 @@ enemy_mask = pygame.mask.from_surface(enemy_img)
 
 
 car_x, car_y = 335, 400
-car_speed = 5 
+car_speed = 5
 bg_y = 0
 score = 0
 gameplay = True

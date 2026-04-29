@@ -173,5 +173,5 @@ def draw_rhombus(surf, color, start, end):
     pygame.draw.polygon(surf, color, points, 2)
 
 # ---------- RUN ----------
-#b ,  e , r , c , s ,t , y , n ,1 ,2 ,3 ,4 
+#b ,  e , r , c , s ,t , y , n ,1 ,2 ,3 ,4  
 main()

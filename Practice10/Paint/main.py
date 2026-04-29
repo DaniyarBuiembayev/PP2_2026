@@ -6,18 +6,18 @@ def main():
     pygame.display.set_caption("PyGame Paint")
     clock = pygame.time.Clock()
 
-    # Canvas setup - this is where we actually "paint"
+    
     canvas = pygame.Surface((800, 600))
     canvas.fill((255, 255, 255))
 
-    # Initial state
+    
     drawing = False
     last_pos = None
     radius = 5
     color = (0, 0, 0)
-    mode = 'brush' # Options: 'brush', 'rect', 'circle', 'eraser'
+    mode = 'brush' 
     
-    # Simple color palette
+    
     colors = {
         'red': (255, 0, 0),
         'green': (0, 255, 0),
@@ -30,19 +30,19 @@ def main():
             if event.type == pygame.QUIT:
                 return
 
-            # Keyboard tool selection
+            
             if event.type == pygame.KEYDOWN:
                 if event.key == pygame.K_r: mode = 'rect'
                 if event.key == pygame.K_c: mode = 'circle'
                 if event.key == pygame.K_b: mode = 'brush'
                 if event.key == pygame.K_e: mode = 'eraser'
-                # Color selection keys
+                
                 if event.key == pygame.K_1: color = colors['red']
                 if event.key == pygame.K_2: color = colors['green']
                 if event.key == pygame.K_3: color = colors['blue']
                 if event.key == pygame.K_4: color = colors['black']
 
-            # Mouse Logic
+            
             if event.type == pygame.MOUSEBUTTONDOWN:
                 drawing = True
                 last_pos = event.pos
@@ -50,7 +50,7 @@ def main():
 
             if event.type == pygame.MOUSEBUTTONUP:
                 if drawing:
-                    # Finalize shape on the canvas
+                    
                     curr_pos = event.pos
                     if mode == 'rect':
                         draw_rect(canvas, color, start_pos, curr_pos)
@@ -66,13 +66,13 @@ def main():
                         draw_line(canvas, (255, 255, 255), last_pos, event.pos, radius * 2)
                     last_pos = event.pos
 
-        # Rendering
-        screen.fill((200, 200, 200)) # Background
-        screen.blit(canvas, (0, 0))   # Draw the actual painting
         
-        # UI/Preview logic
+        screen.fill((200, 200, 200)) 
+        screen.blit(canvas, (0, 0))  
+        
+        
         if drawing and mode in ['rect', 'circle']:
-            # Show a preview of the shape before mouse up
+            
             curr_pos = pygame.mouse.get_pos()
             if mode == 'rect':
                 draw_rect(screen, color, start_pos, curr_pos)
