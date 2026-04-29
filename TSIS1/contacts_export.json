@@ -1,0 +1,71 @@
+[
+  {
+    "username": "Alice Smith",
+    "email": "alice@gmail.com",
+    "birthday": "1990-05-14",
+    "group": "Friend",
+    "phones": [
+      {
+        "phone": "+7-700-111-2222",
+        "type": "mobile"
+      },
+      {
+        "phone": "+7-700-111-3333",
+        "type": "work"
+      }
+    ],
+    "created_at": "2026-04-29 20:53:23.19296"
+  },
+  {
+    "username": "Bob Jones",
+    "email": "bob@work.com",
+    "birthday": "1985-11-30",
+    "group": "Work",
+    "phones": [
+      {
+        "phone": "+7-701-555-6666",
+        "type": "mobile"
+      }
+    ],
+    "created_at": "2026-04-29 20:53:23.19296"
+  },
+  {
+    "username": "Carol White",
+    "email": "carol@mail.ru",
+    "birthday": "1995-03-22",
+    "group": "Family",
+    "phones": [
+      {
+        "phone": "+7-702-999-0000",
+        "type": "home"
+      }
+    ],
+    "created_at": "2026-04-29 20:53:23.19296"
+  },
+  {
+    "username": "Dan Brown",
+    "email": "dan@yahoo.com",
+    "birthday": null,
+    "group": "Other",
+    "phones": [
+      {
+        "phone": "+7-703-123-4567",
+        "type": "mobile"
+      }
+    ],
+    "created_at": "2026-04-29 20:53:23.19296"
+  },
+  {
+    "username": "Daniyar",
+    "email": null,
+    "birthday": "2008-01-30",
+    "group": "Friend",
+    "phones": [
+      {
+        "phone": "87021193794",
+        "type": "mobile"
+      }
+    ],
+    "created_at": "2026-04-29 20:52:59.065751"
+  }
+]

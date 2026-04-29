@@ -1,0 +1,6 @@
+username,email,birthday,group,phone,phone_type
+Alice Smith,alice@gmail.com,1990-05-14,Friend,+7-700-111-2222,mobile
+Alice Smith,alice@gmail.com,1990-05-14,Friend,+7-700-111-3333,work
+Bob Jones,bob@work.com,1985-11-30,Work,+7-701-555-6666,mobile
+Carol White,carol@mail.ru,1995-03-22,Family,+7-702-999-0000,home
+Dan Brown,dan@yahoo.com,,Other,+7-703-123-4567,mobile
